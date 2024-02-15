@@ -1,0 +1,18 @@
+<div class="container d-flex">
+  <div class="row gap-4">
+    @for (episode of episodes; track episodes.id){
+
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">{{ episode.name }}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">
+          Number: {{ episode.episode }}
+        </h6>
+        <p class="card-text">Date: {{ episode.air_date }}</p>
+        <a href="#" class="card-link">Characters</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+    }
+  </div>
+</div>
